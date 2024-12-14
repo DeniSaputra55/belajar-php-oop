@@ -10,6 +10,7 @@ abstract class Animal
 
     abstract public function run(): void;
 
+    ////contravariance
     abstract public function eat(AnimalFood $animalFood): void;
 }
 
@@ -20,6 +21,7 @@ class Cat extends Animal
         echo "Cat $this->name is running" . PHP_EOL;
     }
 
+    
     public function eat(AnimalFood $animalFood): void
     {
         echo "Cat is eating" . PHP_EOL;
